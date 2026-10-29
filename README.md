@@ -3,7 +3,7 @@
 compact drift hud
 anime style lol
 
-<img width="795" height="92" alt="previeee" src="https://github.com/user-attachments/assets/373bd2d9-024a-4b6c-b770-fe3545bf8877" />
+<img width="1000" height="92" alt="previeee" src="https://github.com/user-attachments/assets/373bd2d9-024a-4b6c-b770-fe3545bf8877" />
 <img width="1000" height="250" alt="meowwww" src="https://github.com/user-attachments/assets/92c0cccd-6046-40d8-b6c8-c5d04835c68f" />
 
 
