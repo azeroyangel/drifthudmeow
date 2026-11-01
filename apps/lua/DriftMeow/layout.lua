@@ -18,8 +18,7 @@ local function findWindow()
   end
 end
 
-function M.update(prefs)
-  -- 1. автоматически открыть окно при запуске
+function M.update()
   if not started then
     started = true
     pcall(ac.setWindowOpen, WIN_ID, true)
@@ -27,12 +26,9 @@ function M.update(prefs)
 
   if not ac.accessAppWindow then return end
 
-  local sim = ac.getSim()
-  local screen = sim.windowSize
+  local screen = ac.getSim().windowSize
   if not screen or screen.x <= 0 or screen.y <= 0 then return end
 
-  -- 2. переразместить только при смене разрешения (или первый раз),
-  -- чтобы не мешать, если захочешь потом подвинуть окно вручную
   local key = string.format('%g:%g', screen.x, screen.y)
   if placed and key == lastScreen then return end
 

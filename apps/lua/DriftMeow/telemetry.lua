@@ -27,7 +27,6 @@ end
 function M.finish(s)
   if s.run.seconds >= 1 then
     s.last = s.run
-    if not s.best or s.run.seconds > s.best.seconds then s.best = s.run end
   end
   s.run = { seconds = 0, transitions = 0, peak = 0 }
   s.gap, s.side = 0, 0

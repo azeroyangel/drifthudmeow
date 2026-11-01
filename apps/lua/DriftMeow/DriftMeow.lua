@@ -20,7 +20,7 @@ ac.onCarJumped(-1, function(index) if car and car.index == index then reset() en
 
 function script.update(dt)
   local sim = ac.getSim()
-  Layout.update(prefs)
+  Layout.update()
   car = sim.focusedCar >= 0 and ac.getCar(sim.focusedCar) or nil
   if not car or car.isConnected == false then reset(); car = nil; return end
   local id = car.index
@@ -46,7 +46,7 @@ function script.update(dt)
 end
 
 function script.windowMain()
-  View.draw(car, state, prefs, ui.windowWidth(), ac.getSim().isReplayActive)
+  View.draw(car, state, prefs, ac.getSim().isReplayActive)
 end
 
 function script.windowHistory()
