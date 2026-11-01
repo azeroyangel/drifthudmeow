@@ -23,3 +23,6 @@ anime style lol
 * tracking by track, layout, and car
 * personal bests repository
 * recent runs history
+
+
+yes this ai slop , sorry🥀
